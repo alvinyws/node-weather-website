@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="icon" href="/image/weather.png">     <!--icon on the browsing tab-->
+    <link rel="stylesheet" href="./css/style.css">     <!--rel stands for relationship, href is the refering path-->
+    
+</head>
+
+<body>
+    <div class="main-content">                         <!--sticky footer-->
+        {{>header}}  
+
+        <p>Use this site to get your weather!</p>
+
+        <form>              <!--making a search bar-->
+
+            <input placeholder="Location">
+
+            <button>Search</button>
+        </form>
+
+        <p id="message-1"> </p>
+        <p id="message-2"> </p>
+
+        <script src = "./js/app.js"></script>           <!--the only page to fetch forecast--> <!--link it front end javascript file-->
+    </div>
+
+{{>footer}}
+</body>
+
+
+
+</html>
+
+
+
+<!--in handlebars page, it has normal html to do static job, but u can add dynamic features here
+//so html files can be deleted cause html files only do static job-->
