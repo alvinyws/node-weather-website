@@ -25,7 +25,7 @@ weatherForm.addEventListener('submit', (e) => {    //lining the search form and 
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
-    fetch('port/weather?address=' + location).then((response) => { //the url where we try to fetch from
+    fetch('http://localhost:3000/weather?address=' + location).then((response) => { //the url where we try to fetch from
       response.json().then((data) => {       //callback function for fetch is abit different, we use the then method for callback         
         if(data.error){
             messageOne.textContent = data.error
